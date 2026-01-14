@@ -109,12 +109,14 @@
         const WHATSAPP_NUMBER = '6287784195051';
         
         const prizes = [
-            { name: 'Saldo 50rb', value: 'Rp 50.000', icon: '💳' },
-            { name: 'Saldo 100rb', value: 'Rp 100.000', icon: '💰' },
-            { name: 'Saldo 200rb', value: 'Rp 200.000', icon: '💸' },
-            { name: 'Saldo 500rb', value: 'Rp 500.000', icon: '🤑' },
-            { name: 'Emas Batang 3gr', value: 'Emas 3 Gram', icon: '🥇' },
-            { name: 'iPhone 17 Pro Max', value: 'iPhone 17 Pro Max', icon: '📲' }
+            { name: 'Saldo 50rb', value: 'Rp 50.000', icon: '💵' },
+            { name: 'Saldo 100rb', value: 'Rp 100.000', icon: '💵' },
+            { name: 'Saldo 200rb', value: 'Rp 200.000', icon: '💵' },
+            { name: 'Saldo 500rb', value: 'Rp 500.000', icon: '💵' },
+            { name: 'Emas Batang 3gr', value: 'Emas 3 Gram', icon: '🧈' },
+            { name: 'iPhone 17 Pro Max', value: 'iPhone 17 Pro Max', icon: '📲' },
+            { name: 'Motor Yamaha Nmax', value: 'Motor Yamaha Nmax', icon: '🏍️' },
+            { name: 'Bonus Deposit 10%', value: 'Bonus Deposit 10%', icon: '🔟%' }
         ];
 
         let stage = 'welcome';
@@ -401,6 +403,11 @@
         document.getElementById('whatsappBtn').onclick = () => {
             playSound('click');
             window.open(`https://wa.me/${WHATSAPP_NUMBER}`, '_blank');
+        };
+
+        document.getElementById('Saluran WA').onclick = () => {
+             playSound('click');
+            window.open('https://whatsapp.com/channel/0029VbC8UsHEquiK4AQ7BM03');
         };
 
         document.getElementById('closePrizeModal').onclick = () => {
