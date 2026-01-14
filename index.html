@@ -56,19 +56,19 @@
     <div id="sparkles" class="fixed inset-0 pointer-events-none"></div>
 
     <!-- Running Text -->
-    <div class="fixed top-0 left-0 right-0 bg-gradient-to-r from-yellow-600 via-yellow-500 to-yellow-600 text-black py-3 overflow-hidden shadow-2xl z-10 border-b-4 border-red-400">
+    <div class="fixed top-0 left-0 right-0 bg-gradient-to-r from-red-600 via-red-500 to-red-600 text-black py-3 overflow-hidden shadow-2xl z-10 border-b-4 border-red-400">
         <div class="animate-marquee whitespace-nowrap">
             <span id="winnerText" class="text-sm md:text-base font-bold"></span>
         </div>
     </div>
 
     <!-- Sound Toggle -->
-    <button id="soundToggle" class="fixed top-20 right-4 bg-gradient-to-r from-yellow-600 to-yellow-500 p-3 rounded-full hover:from-yellow-500 hover:to-red-400 transition shadow-lg z-10 border-2 border-red-400">
+    <button id="soundToggle" class="fixed top-20 right-4 bg-gradient-to-r from-red-600 to-red-500 p-3 rounded-full hover:from-red-500 hover:to-red-400 transition shadow-lg z-10 border-2 border-red-400">
         <span id="soundIcon">🔊</span>
     </button>
 
     <!-- Live Chat Button -->
-    <button id="liveChatBtn" class="fixed bottom-6 right-6 bg-gradient-to-r from-yellow-600 to-yellow-500 hover:from-yellow-500 hover:to-red-400 text-black font-bold py-3 px-5 rounded-full shadow-2xl z-20 transition transform hover:scale-110 animate-bounce-chat border-2 border-red-400">
+    <button id="liveChatBtn" class="fixed bottom-6 right-6 bg-gradient-to-r from-red-600 to-red-500 hover:from-red-500 hover:to-red-400 text-black font-bold py-3 px-5 rounded-full shadow-2xl z-20 transition transform hover:scale-110 animate-bounce-chat border-2 border-red-400">
         <div class="flex flex-col items-center gap-1">
             <span class="text-2xl">💬</span>
             <span class="text-xs whitespace-nowrap">LIVE CHAT 24/7</span>
@@ -89,9 +89,9 @@
     <!-- Prize List Modal -->
     <div id="prizeModal" class="hidden fixed inset-0 bg-black bg-opacity-80 z-50 overflow-y-auto">
         <div class="min-h-screen flex items-center justify-center p-4 py-8">
-            <div class="bg-gradient-to-br from-gray-800 to-black rounded-3xl p-6 md:p-8 max-w-2xl w-full border-4 border-yellow-500 shadow-2xl">
+            <div class="bg-gradient-to-br from-gray-800 to-black rounded-3xl p-6 md:p-8 max-w-2xl w-full border-4 border-red-500 shadow-2xl">
                 <div class="text-center mb-6">
-                    <h2 class="text-2xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 to-yellow-300 mb-2">
+                    <h2 class="text-2xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-300 mb-2">
                         🎁 DAFTAR HADIAH 🎁
                     </h2>
                     <p class="text-gray-300 text-sm">Hadiah Menarik Menanti Anda!</p>
@@ -199,23 +199,23 @@
         function renderWelcome() {
             return `
                 <div class="text-center relative z-10">
-                    <div class="mb-8 bg-gradient-to-br from-gray-800 to-black rounded-3xl p-8 shadow-2xl animate-glow border-4 border-yellow-500">
+                    <div class="mb-8 bg-gradient-to-br from-gray-800 to-black rounded-3xl p-8 shadow-2xl animate-glow border-4 border-red-500">
                         <div class="text-6xl md:text-8xl font-bold">
-                            <span class="text-yellow-500">AJAIB</span><span class="text-white">4D</span>
+                            <span class="text-red-500">AJAIB</span><span class="text-white">4D</span>
                         </div>
                     </div>
                     <div class="mb-6">
                         <span class="text-8xl animate-pulse-gold">🎁</span>
                     </div>
-                    <h1 class="text-5xl md:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 via-yellow-300 to-yellow-500 mb-3">
+                    <h1 class="text-5xl md:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-red-300 to-red-500 mb-3">
                         MYSTERY BOX
                     </h1>
                     <div class="flex items-center justify-center gap-3 mb-8">
-                        <div class="h-1 w-20 bg-gradient-to-r from-transparent to-yellow-500"></div>
-                        <span class="text-yellow-500">✨</span>
-                        <div class="h-1 w-20 bg-gradient-to-l from-transparent to-yellow-500"></div>
+                        <div class="h-1 w-20 bg-gradient-to-r from-transparent to-red-500"></div>
+                        <span class="text-red-500">✨</span>
+                        <div class="h-1 w-20 bg-gradient-to-l from-transparent to-red-500"></div>
                     </div>
-                    <div class="bg-gradient-to-br from-gray-800 to-black rounded-2xl p-6 mb-8 max-w-lg mx-auto border-2 border-yellow-500 shadow-2xl">
+                    <div class="bg-gradient-to-br from-gray-800 to-black rounded-2xl p-6 mb-8 max-w-lg mx-auto border-2 border-red-500 shadow-2xl">
                         <p class="text-white text-lg md:text-xl font-medium leading-relaxed">
                             🎁 Selamat Datang di Mystery Box 🎁<br/>
                             <span class="text-red-400">Tekan SPIN & Masukkan User ID</span><br/>
@@ -226,7 +226,7 @@
                         🎁 Tampilkan Hadiah
                     </button>
                     <br/>
-                    <button id="startBtn" class="bg-gradient-to-r from-yellow-600 to-yellow-500 hover:from-yellow-500 hover:to-red-400 text-black font-bold py-5 px-16 rounded-full text-2xl shadow-2xl transform hover:scale-110 transition animate-pulse-gold border-4 border-red-400">
+                    <button id="startBtn" class="bg-gradient-to-r from-red-600 to-red-500 hover:from-red-500 hover:to-red-400 text-black font-bold py-5 px-16 rounded-full text-2xl shadow-2xl transform hover:scale-110 transition animate-pulse-gold border-4 border-red-400">
                         ╰┈➤ SPIN DISINI ˃ᴗ˂
                     </button>
                 </div>
@@ -241,9 +241,9 @@
                             <h2 class="text-2xl md:text-3xl font-bold text-red-400 mb-2">Masukkan User ID Mu</h2>
                             <p class="text-gray-400 text-sm">Untuk mengklaim hadiah</p>
                         </div>
-                        <input type="text" id="userIdInput" placeholder="Contoh: user_***88" class="w-full px-5 py-4 border-2 border-yellow-500 rounded-xl mb-4 text-lg focus:border-red-400 focus:outline-none bg-gray-900 text-white placeholder-gray-400">
+                        <input type="text" id="userIdInput" placeholder="Contoh: user_***88" class="w-full px-5 py-4 border-2 border-red-500 rounded-xl mb-4 text-lg focus:border-red-400 focus:outline-none bg-gray-900 text-white placeholder-gray-400">
                         <div id="errorMsg" class="hidden bg-red-900 border-2 border-red-500 text-red-200 px-4 py-3 rounded-lg mb-4 text-sm"></div>
-                        <button id="continueBtn" class="w-full bg-gradient-to-r from-yellow-600 to-yellow-500 hover:from-yellow-500 hover:to-red-400 text-black font-bold py-4 rounded-xl text-xl shadow-lg transform hover:scale-105 transition border-2 border-red-400">
+                        <button id="continueBtn" class="w-full bg-gradient-to-r from-red-600 to-red-500 hover:from-red-500 hover:to-red-400 text-black font-bold py-4 rounded-xl text-xl shadow-lg transform hover:scale-105 transition border-2 border-red-400">
                             ✨ Lanjutkan
                         </button>
                     </div>
@@ -255,7 +255,7 @@
             let boxes = '';
             for (let i = 0; i < 9; i++) {
                 boxes += `
-                    <button class="box-btn aspect-square bg-gradient-to-br from-yellow-600 via-yellow-500 to-red-400 rounded-2xl shadow-2xl transform transition duration-300 border-4 border-red-400 flex flex-col items-center justify-center p-2 hover:scale-110 hover:rotate-6 cursor-pointer" data-index="${i}">
+                    <button class="box-btn aspect-square bg-gradient-to-br from-red-600 via-red-500 to-red-400 rounded-2xl shadow-2xl transform transition duration-300 border-4 border-red-400 flex flex-col items-center justify-center p-2 hover:scale-110 hover:rotate-6 cursor-pointer" data-index="${i}">
                         <div class="text-lg md:text-2xl font-bold mb-2">
                             <span class="text-black">AJAIB</span><span class="text-white">4D</span>
                         </div>
@@ -265,7 +265,7 @@
             }
             return `
                 <div class="text-center relative z-10">
-                    <div class="bg-gradient-to-br from-gray-800 to-black rounded-2xl p-6 mb-8 border-2 border-yellow-500">
+                    <div class="bg-gradient-to-br from-gray-800 to-black rounded-2xl p-6 mb-8 border-2 border-red-500">
                         <h2 class="text-2xl md:text-3xl font-bold text-red-400">
                             🎁 Pilih Satu Box Untuk Membuka Hadiahmu! 🎁
                         </h2>
@@ -280,17 +280,17 @@
         function renderResult(prize) {
             return `
                 <div class="relative z-10">
-                    <div class="bg-gradient-to-br from-gray-800 to-black rounded-3xl p-8 md:p-12 shadow-2xl max-w-md w-full text-center border-4 border-yellow-500">
+                    <div class="bg-gradient-to-br from-gray-800 to-black rounded-3xl p-8 md:p-12 shadow-2xl max-w-md w-full text-center border-4 border-red-500">
                         <div class="text-9xl mb-6 animate-bounce">${prize.icon}</div>
-                        <h2 class="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 to-yellow-300 mb-3">
+                        <h2 class="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-300 mb-3">
                             SELAMAT! 🎉
                         </h2>
                         <p class="text-xl text-gray-300 mb-4">Anda mendapatkan:</p>
-                        <div class="bg-gradient-to-r from-yellow-600 via-yellow-500 to-yellow-600 text-black py-6 px-6 rounded-2xl mb-6 shadow-xl border-4 border-red-400">
+                        <div class="bg-gradient-to-r from-red-600 via-red-500 to-red-600 text-black py-6 px-6 rounded-2xl mb-6 shadow-xl border-4 border-red-400">
                             <p class="text-3xl font-bold">${prize.value}</p>
                         </div>
                         <p class="text-sm text-gray-400 mb-6">💬 Klaim hadiah sekarang juga!</p>
-                        <button id="claimBtn" class="w-full bg-gradient-to-r from-yellow-600 to-yellow-500 hover:from-yellow-500 hover:to-red-400 text-black font-bold py-4 rounded-xl text-xl mb-3 shadow-lg transform hover:scale-105 transition border-2 border-red-400">
+                        <button id="claimBtn" class="w-full bg-gradient-to-r from-red-600 to-red-500 hover:from-red-500 hover:to-red-400 text-black font-bold py-4 rounded-xl text-xl mb-3 shadow-lg transform hover:scale-105 transition border-2 border-red-400">
                             🎁 Klaim Hadiah Sekarang
                         </button>
                         <button id="resetBtn" class="w-full bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 rounded-xl text-base transition border-2 border-gray-500">
@@ -376,7 +376,7 @@
             const modal = document.getElementById('prizeModal');
             const prizeList = document.getElementById('prizeList');
             prizeList.innerHTML = prizes.map(prize => `
-                <div class="bg-gradient-to-br from-yellow-600 to-yellow-500 rounded-2xl p-6 border-4 border-red-400 shadow-xl transform hover:scale-102 transition duration-300">
+                <div class="bg-gradient-to-br from-red-600 to-red-500 rounded-2xl p-6 border-4 border-red-400 shadow-xl transform hover:scale-102 transition duration-300">
                     <div class="text-center">
                         <div class="text-6xl mb-3">${prize.icon}</div>
                         <h3 class="text-xl font-bold text-black mb-2">${prize.name}</h3>
